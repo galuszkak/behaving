@@ -37,7 +37,6 @@ def named_browser(context, name):
         else:
             raise WebDriverException("Failed to initialize browser")
     context.browser = context.browsers[name]
-    context.browser.switch_to.window(context.browser.windows[0])
     if single_browser:
         context.is_connected = True
     if context.default_browser_size:
