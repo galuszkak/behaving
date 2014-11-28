@@ -80,8 +80,10 @@ Let's take the familiar LOTR characters as our test users. On setting up the tes
 
 ::
 
+    from behaving.personas.persona import Persona
+
     PERSONAS = {
-        'Frodo': dict(
+        'Frodo': Persona(
                 fullname=u'Frodo Baggins',
                 email=u'frodo@shire.com',
                 password=u'frodopass',
@@ -93,7 +95,7 @@ Let's take the familiar LOTR characters as our test users. On setting up the tes
 
             ),
 
-        'Gandalf': dict(
+        'Gandalf': Persona(
                 fullname=u'Gandalf the Grey',
                 email=u'gandalf@wizardry.com',
                 password=u'gandalfpass',

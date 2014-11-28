@@ -13,6 +13,7 @@
 *.DS_Store
 *.egg-info
 *.pyc
+*.idea
 chromedriver.log
 ghostdriver.log
 .long-description.html
